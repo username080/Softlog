@@ -1,0 +1,14 @@
+[Unit]
+Description=Softlog - Lightweight Event-Driven Log Monitor
+After=network.target
+
+[Service]
+Type=simple
+User=root
+# TODO: Update these flags with your actual log file, regex, and Discord webhook!
+ExecStart=/usr/local/bin/softlog -f /var/log/syslog -k "^FATAL:.*" -w "https://discord.com/api/webhooks/your/url"
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
