@@ -28,7 +28,7 @@ sudo apt install build-essential libcurl4-openssl-dev
 You can install Softlog as a native system daemon by running the provided install script:
 
 ```bash
-git clone https://github.com/yourusername/softlog.git
+git clone https://github.com/username080/Softlog.git
 cd softlog
 sudo ./install.sh
 ```
